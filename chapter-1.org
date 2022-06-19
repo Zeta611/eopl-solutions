@@ -1,0 +1,10 @@
+#+TITLE: EOPL Chapter 1
+#+AUTHOR: Jay Lee
+#+LATEX_HEADER: \usepackage{bussproofs}
+
+* Example 1.1
+
+\begin{prooftree}
+  \AxiomC{}
+  \UnaryInfC{$n \in S$}
+\end{prooftree}
