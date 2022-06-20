@@ -1,10 +1,20 @@
-#+TITLE: EOPL Chapter 1
+#+TITLE: Chapter 1
 #+AUTHOR: Jay Lee
+#+STARTUP: latexpreview
 #+LATEX_HEADER: \usepackage{bussproofs}
 
-* Example 1.1
+* Exercise 1.1
+1.
+\begin{equation*}
+  \{3n + 2 \vert n \in \mathbb{N}\}
+\end{equation*}
 
 \begin{prooftree}
   \AxiomC{}
-  \UnaryInfC{$n \in S$}
+  \UnaryInfC{$0 \in S$}
+\end{prooftree}
+
+\begin{prooftree}
+  \AxiomC{$n \in S$}
+  \UnaryInfC{$3n + 2 \in S$}
 \end{prooftree}
