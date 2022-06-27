@@ -6,12 +6,22 @@
 * Exercise 1.1
 1.
 \begin{equation*}
-  \{3n + 2 \vert n \in \mathbb{N}\}
+  S = \{3n + 2 \vert n \in \mathbb{N}\}
 \end{equation*}
+
+In top-down style, an integer is in $S$ if and only if
+1. it is 2, or
+2. it minus 2 is in $S$.
+
+In bottom-up style, $S$ is the smallest set of integers that satisfies
+1. $2 \in S$, and
+2. if $n \in S$, then $n + 2 \in S$.
+
+Using rules of inference, $S$ is:
 
 \begin{prooftree}
   \AxiomC{}
-  \UnaryInfC{$0 \in S$}
+  \UnaryInfC{$2 \in S$}
 \end{prooftree}
 
 \begin{prooftree}
